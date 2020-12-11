@@ -181,7 +181,7 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
     <td>double price = 2.99;<br>
         Pastry newPastry = new Pastry(price, true);</td>
     <td>typeof(Bread) = newPastry.GetType()</td>
-    <td>False</td>
+    <td>True</td>
   </tr>
 </table>
 

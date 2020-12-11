@@ -54,7 +54,7 @@ namespace Bakery.Tests
     public void PastryConstructor_CreatesInstanceOfPastryWithDealMarker_Pastry()
     {
       double price = 2.99;
-      Pastry newPastry = new Pastry(price, 1);
+      Pastry newPastry = new Pastry(price, true);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
   }
