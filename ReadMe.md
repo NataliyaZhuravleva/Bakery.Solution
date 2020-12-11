@@ -193,6 +193,16 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
     <td>newBread.CalculateBreadCost=40</td>
     <td>True</td>
   </tr>
+  <tr>
+    <td>12</td>
+    <td>Should correctly return cost of Pastry if deal is applied</td>
+    <td>int amount=7;<br>
+        double price = 2;<br>
+        Pastry newPastry = new Pastry(price, true);<br>
+    </td>
+    <td>newPastry.CalculatePastryCost=12</td>
+    <td>False</td>
+  </tr>
 </table>
 
 ### <span style="color:#0ec2b8">License</span> 

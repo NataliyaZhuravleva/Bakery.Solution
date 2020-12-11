@@ -18,7 +18,14 @@ namespace Bakery.Models
 
     public double CalculatePastryCost(int amount)
     {
-      return amount * PastryPrice;
+      if (_PastryDealMarker == false || amount < 3)
+      {
+        return amount * PastryPrice;
+      }
+      else
+      {
+        return (amount/3)*(PastryPrice-1)+(amount-amount/3)*PastryPrice-1;
+      }
     }
   }
 }

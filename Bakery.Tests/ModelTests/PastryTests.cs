@@ -57,5 +57,17 @@ namespace Bakery.Tests
       Pastry newPastry = new Pastry(price, true);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
+
+    [TestMethod]
+    public void CalculatePastryCostIfDeal_ReturnPastryCostWithDiscount_Double()
+    {
+      int amount = 7;
+      double price = 2;
+      Pastry newPastry = new Pastry(price, true);
+
+      double result = newPastry.CalculatePastryCost(amount);
+
+      Assert.AreEqual((amount/3)*(price-1)+(amount-amount/3)*price, result);
+    }
   }
 }
