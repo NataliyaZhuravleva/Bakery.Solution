@@ -24,7 +24,7 @@ namespace Bakery.Models
       }
       else
       {
-        return (amount/3)*(PastryPrice-1)+(amount-amount/3)*PastryPrice-1;
+        return (amount/3)*(PastryPrice-1)+(amount-amount/3)*PastryPrice;
       }
     }
   }

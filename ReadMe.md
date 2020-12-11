@@ -201,7 +201,7 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
         Pastry newPastry = new Pastry(price, true);<br>
     </td>
     <td>newPastry.CalculatePastryCost=12</td>
-    <td>False</td>
+    <td>True</td>
   </tr>
 </table>
 
