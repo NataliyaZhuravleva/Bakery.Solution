@@ -145,7 +145,7 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
       Pastry newPastry = new Pastry(price);<br>
       double updatedPrice=1.99</td>
     <td>newPastry.Price=1.99</td>
-    <td>False</td>
+    <td>True</td>
   </tr>
 </table>
 
