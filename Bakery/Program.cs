@@ -16,12 +16,20 @@ public class Program
 
     //Interaction with user
     Console.WriteLine("Welcome to the Pierre's Bakery!");
-    Console.WriteLine("Our offers for today: Bread for $" + breadPrice + " and Pastry for $" + pastryPrice);
+    Console.WriteLine("Our pricelist: Bread for $" + breadPrice + " and Pastry for $" + pastryPrice);
 
-    // if (newBread._BreadDealMarker ==true)
-    // {
-    //   Console.WriteLine("We have deals for today!");  
-    // }
+    if (newBread.BreadDealMarker == true || newPastry.PastryDealMarker == true)
+    {
+      Console.Write("Our deals today:\n");
+      if (newBread.BreadDealMarker == true)
+      {
+        Console.WriteLine("Buy 2 loafs of bread, get 1 loaf free.");
+      }
+      if (newPastry.PastryDealMarker == true)
+      {
+        Console.WriteLine("Buy 2 loafs of bread, get 1 loaf free.");
+      }
+    }
 
   }
 }

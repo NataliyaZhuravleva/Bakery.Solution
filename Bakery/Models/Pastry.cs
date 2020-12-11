@@ -3,7 +3,7 @@ namespace Bakery.Models
   public class Pastry
   {
     public double PastryPrice { get; set; }
-    private bool PastryDealMarker { get; }
+    public bool PastryDealMarker { get; }
 
     public Pastry(double pastryPrice)
     {
