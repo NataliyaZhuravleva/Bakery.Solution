@@ -14,5 +14,16 @@ namespace Bakery.Tests
       Pastry newPastry = new Pastry();
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
+
+    [TestMethod]
+    public void GetPastryPrice_ReturnsPastryPrice_Double()
+    {
+      double price = 4.49;
+      Pastry newPastry = new Pastry();
+
+      double result = newPastry.Price;
+
+      Assert.AreEqual(price, result);
+    }
   }
 }

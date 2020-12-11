@@ -11,14 +11,14 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      Bread newBread = new Bread(2.99);
+      Bread newBread = new Bread(4.49);
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
 
     [TestMethod]
-    public void GetPrice_ReturnsPrice_Double()
+    public void GetBreadPrice_ReturnsBreadPrice_Double()
     {
-      double price = 2.99;
+      double price = 4.49;
       Bread newBread = new Bread(price);
 
       double result = newBread.Price;
@@ -26,12 +26,12 @@ namespace Bakery.Tests
       Assert.AreEqual(price, result);
     }
     [TestMethod]
-    public void SetPrice_SetPrice_Double()
+    public void SetBreadPrice_SetBreadPrice_Double()
     {
-      double price = 2.99;
+      double price = 4.49;
       Bread newBread = new Bread(price);
-
-      double updatedPrice = 1.99;
+      
+      double updatedPrice = 3.49;
       newBread.Price = updatedPrice;
       double result = newBread.Price;
 

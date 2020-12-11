@@ -108,19 +108,19 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
   </tr>
   <tr>
     <td>2</td>
-    <td>Should correctly return price</td>
-    <td>double price = 2.99;<br>
+    <td>Should correctly return price of Bread</td>
+    <td>double price = 4.49;<br>
       Bread newBread = new Bread(price);</td>
-    <td>newBread.Price=2.99</td>
+    <td>newBread.Price=4.49</td>
     <td>True</td>
   </tr>
   <tr>
     <td>3</td>
-    <td>Should correctly set price</td>
-    <td>double price = 2.99;<br>
+    <td>Should correctly set price of Bread</td>
+    <td>double price = 4.49;<br>
       Bread newBread = new Bread(price);<br>
-      double updatedPrice=1.99</td>
-    <td>newBread.Price=1.99</td>
+      double updatedPrice=3.49</td>
+    <td>newBread.Price=3.49</td>
     <td>True</td>
   </tr>
   <tr>
@@ -129,6 +129,14 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
     <td>Pastry newPastry = new Pastry();</td>
     <td>typeof(Pastry) = newPastry.GetType()</td>
     <td>True</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Should correctly return price of Pastry</td>
+    <td>double price = 2.99;<br>
+      Pastry newPastry = new Pastry(price);</td>
+    <td>newPastry.Price=2.99</td>
+    <td>False</td>
   </tr>
   
 </table>
