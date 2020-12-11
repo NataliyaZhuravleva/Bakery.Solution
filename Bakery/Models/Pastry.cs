@@ -2,12 +2,12 @@ namespace Bakery.Models
 {
   public class Pastry
   {
-    // public double Pastry { get; set; }
+    public double Price { get; }
 
 
-    // public Pastry(double price)
-    // {
-    //   Price= price;
-    // }
+    public Pastry(double price)
+    {
+      Price= price;
+    }
   }
 }
