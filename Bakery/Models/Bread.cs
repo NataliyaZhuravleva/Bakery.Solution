@@ -22,7 +22,7 @@ namespace Bakery.Models
       }
       else
       {      
-          return (amount-amount/3)*BreadPrice-1;
+          return (amount-amount/3)*BreadPrice;
       } 
     }
 

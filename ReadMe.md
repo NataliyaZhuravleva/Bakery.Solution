@@ -191,7 +191,7 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
         Bread newBread = new Bread(price, true);<br>
     </td>
     <td>newBread.CalculateBreadCost=40</td>
-    <td>False</td>
+    <td>True</td>
   </tr>
 </table>
 
