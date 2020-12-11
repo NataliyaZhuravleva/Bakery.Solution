@@ -114,6 +114,15 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
     <td>newBread.Price=2.99</td>
     <td>True</td>
   </tr>
+  <tr>
+    <td>3</td>
+    <td>Should correctly set price</td>
+    <td>double price = 2.99;<br>
+      Bread newBread = new Bread(price);<br>
+      double updatedPrice=1.99</td>
+    <td>newBread.Price=1.99</td>
+    <td>False</td>
+  </tr>
   
 </table>
 

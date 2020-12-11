@@ -20,8 +20,22 @@ namespace Bakery.Tests
     {
       double price = 2.99;
       Bread newBread = new Bread(price);
+
       double result = newBread.Price;
+
       Assert.AreEqual(price, result);
+    }
+    [TestMethod]
+    public void SetPrice_SetPrice_Double()
+    {
+      double price = 2.99;
+      Bread newBread = new Bread(price);
+
+      double updatedPrice = 1.99;
+      newBread.Price = updatedPrice;
+      double result = newBread.Price;
+
+      Assert.AreEqual(updatedPrice, result);
     }
   }
 }
