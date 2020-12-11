@@ -30,7 +30,7 @@ namespace Bakery.Tests
     {
       double price = 4.49;
       Bread newBread = new Bread(price);
-      
+
       double updatedPrice = 3.49;
       newBread.BreadPrice = updatedPrice;
       double result = newBread.BreadPrice;
@@ -42,11 +42,11 @@ namespace Bakery.Tests
     {
       double price = 4.49;
       Bread newBread = new Bread(price);
-      int amount=3;
-      
+      int amount = 3;
+
       double result = newBread.CalculateBreadCost(amount);
 
-      Assert.AreEqual(amount*price, result);
+      Assert.AreEqual(amount * price, result);
     }
 
     [TestMethod]
@@ -55,6 +55,18 @@ namespace Bakery.Tests
       double price = 4.49;
       Bread newBread = new Bread(price, true);
       Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
+
+    [TestMethod]
+    public void CalculateBreadCostIfDeal_ReturnBreadCostWithDiscount_Double()
+    {
+      int amount = 11;
+      double price = 5;
+      Bread newBread = new Bread(price, true);
+
+      double result = newBread.CalculateBreadCost(amount);
+
+      Assert.AreEqual((amount - amount / 3) * price, result);
     }
   }
 }

@@ -183,6 +183,16 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
     <td>typeof(Bread) = newPastry.GetType()</td>
     <td>True</td>
   </tr>
+  <tr>
+    <td>11</td>
+    <td>Should correctly return cost of Bread if deal is applied</td>
+    <td>int amount=11;<br>
+        double price = 5;<br>
+        Bread newBread = new Bread(price, true);<br>
+    </td>
+    <td>newBread.CalculateBreadCost=40</td>
+    <td>False</td>
+  </tr>
 </table>
 
 ### <span style="color:#0ec2b8">License</span> 

@@ -16,7 +16,16 @@ namespace Bakery.Models
 
     public double CalculateBreadCost(int amount)
     {
-      return amount*BreadPrice;
+      if (_BreadDealMarker == false || amount < 3)
+      {
+        return amount * BreadPrice;
+      }
+      else
+      {      
+          return (amount-amount/3)*BreadPrice-1;
+      } 
     }
+
+
   }
 }
