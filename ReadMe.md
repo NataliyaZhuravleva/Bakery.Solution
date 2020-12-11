@@ -138,7 +138,15 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
     <td>newPastry.Price=2.99</td>
     <td>True/td>
   </tr>
-  
+  <tr>
+    <td>6</td>
+    <td>Should correctly set price of Pastry</td>
+    <td>double price = 2.99;<br>
+      Pastry newPastry = new Pastry(price);<br>
+      double updatedPrice=1.99</td>
+    <td>newPastry.Price=1.99</td>
+    <td>False</td>
+  </tr>
 </table>
 
 ### <span style="color:#0ec2b8">License</span> 
