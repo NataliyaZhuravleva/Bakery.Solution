@@ -14,7 +14,7 @@ public class Program
     double pastryPrice = 2;
     Pastry newPastry = new Pastry(pastryPrice, true);
 
-    //Interaction with user
+    //Announcements for user
     Console.WriteLine("Welcome to the Pierre's Bakery!");
     Console.WriteLine("Our pricelist: Bread for $" + breadPrice + " and Pastry for $" + pastryPrice);
 
@@ -29,6 +29,20 @@ public class Program
       {
         Console.WriteLine("Buy 2 loafs of bread, get 1 loaf free.");
       }
+    }
+
+    //Interaction with user
+    Console.WriteLine("Would you like to buy something today? ['Y' for yes, 'Enter' for no]");
+    string ifBuyer = Console.ReadLine();
+    if (ifBuyer.ToLower() == "y")
+    {
+      Console.WriteLine("How many loafs of bread would you like to buy today?");
+      int breadAmount = int.Parse(Console.ReadLine());
+      Console.WriteLine(breadAmount);
+
+      Console.WriteLine("How many pastries would you like to buy?");
+      int pastryAmount = int.Parse(Console.ReadLine());
+      Console.WriteLine(pastryAmount);
     }
 
   }
