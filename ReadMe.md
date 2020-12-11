@@ -101,10 +101,10 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
   </tr>
   <tr>
     <td>1</td>
-    <td>Should correctly </td>
-    <td></td>
-    <td></td>
-    <td>False</td>
+    <td>Should create Bread objects of the Bread type</td>
+    <td>Bread newBread = new Bread();</td>
+    <td>typeof(Bread) = newBread.GetType()</td>
+    <td>True</td>
   </tr>
   
 </table>

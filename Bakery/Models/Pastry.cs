@@ -2,10 +2,12 @@ namespace Bakery.Models
 {
   public class Pastry
   {
-    public float Cost { get; set; }
+    // public float Pastry { get; set; }
 
 
-    public Pastry(string cost)
-    {
-      Cost = cost;
-    }
+    // public Pastry(float price)
+    // {
+    //   Price= price;
+    // }
+  }
+}
