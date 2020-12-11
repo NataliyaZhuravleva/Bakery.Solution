@@ -36,14 +36,23 @@ public class Program
     string ifBuyer = Console.ReadLine();
     if (ifBuyer.ToLower() == "y")
     {
-      Console.WriteLine("How many loafs of bread would you like to buy today?");
+      Console.WriteLine("How many loafs of bread would you like to buy today? (answer must be more or equal zero)");
       int breadAmount = int.Parse(Console.ReadLine());
-      Console.WriteLine(breadAmount);
+      //Console.WriteLine(breadAmount);
 
-      Console.WriteLine("How many pastries would you like to buy?");
+      Console.WriteLine("How many pastries would you like to buy? (answer must be more or equal zero)");
       int pastryAmount = int.Parse(Console.ReadLine());
-      Console.WriteLine(pastryAmount);
+      //Console.WriteLine(pastryAmount);
+      if (breadAmount >= 0 && pastryAmount >= 0)
+      {
+        double result = CalculateTotalCost(breadAmount, pastryAmount, newBread, newPastry);
+        Console.WriteLine("It will cost you $" +result);
+      }
     }
-
   }
+  static double CalculateTotalCost(int breadAmount, int pastryAmount, Bread newBread, Pastry newPastry)
+  {
+    return newBread.CalculateBreadCost(breadAmount) + newPastry.CalculatePastryCost(pastryAmount);
+  }
+
 }
