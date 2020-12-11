@@ -175,6 +175,14 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
     <td>typeof(Bread) = newBread.GetType()</td>
     <td>True</td>
   </tr>
+  <tr>
+    <td>10</td>
+    <td>Should create Pastry objects of the Pastry type with _pastryDealMarker property</td>
+    <td>double price = 2.99;<br>
+        Pastry newPastry = new Pastry(price, true);</td>
+    <td>typeof(Bread) = newPastry.GetType()</td>
+    <td>False</td>
+  </tr>
 </table>
 
 ### <span style="color:#0ec2b8">License</span> 

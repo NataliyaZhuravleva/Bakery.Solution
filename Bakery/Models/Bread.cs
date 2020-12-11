@@ -8,10 +8,10 @@ namespace Bakery.Models
     {
       BreadPrice = breadPrice;
     }
-    public Bread(double breadPrice, bool breadDealMarker)
+    public Bread(double breadPrice, bool _breadDealMarker)
       : this(breadPrice)
     {
-      _BreadDealMarker = breadDealMarker; //false - no deals, true - we have a deal
+      _BreadDealMarker = _breadDealMarker; //false - no deals, true - we have a deal
     }
 
     public double CalculateBreadCost(int amount)
