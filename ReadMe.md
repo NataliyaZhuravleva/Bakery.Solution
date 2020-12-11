@@ -121,7 +121,7 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
       Bread newBread = new Bread(price);<br>
       double updatedPrice=1.99</td>
     <td>newBread.Price=1.99</td>
-    <td>False</td>
+    <td>True</td>
   </tr>
   
 </table>
