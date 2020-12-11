@@ -110,7 +110,7 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
     <td>2</td>
     <td>Should correctly return price of Bread</td>
     <td>double price = 4.49;<br>
-      Bread newBread = new Bread(price);</td>
+        Bread newBread = new Bread(price);</td>
     <td>newBread.Price=4.49</td>
     <td>True</td>
   </tr>
@@ -118,8 +118,8 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
     <td>3</td>
     <td>Should correctly set price of Bread</td>
     <td>double price = 4.49;<br>
-      Bread newBread = new Bread(price);<br>
-      double updatedPrice=3.49</td>
+        Bread newBread = new Bread(price);<br>
+        double updatedPrice=3.49</td>
     <td>newBread.Price=3.49</td>
     <td>True</td>
   </tr>
@@ -134,7 +134,7 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
     <td>5</td>
     <td>Should correctly return price of Pastry</td>
     <td>double price = 2.99;<br>
-      Pastry newPastry = new Pastry(price);</td>
+        Pastry newPastry = new Pastry(price);</td>
     <td>newPastry.Price=2.99</td>
     <td>True/td>
   </tr>
@@ -142,10 +142,20 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
     <td>6</td>
     <td>Should correctly set price of Pastry</td>
     <td>double price = 2.99;<br>
-      Pastry newPastry = new Pastry(price);<br>
-      double updatedPrice=1.99</td>
+        Pastry newPastry = new Pastry(price);<br>
+        double updatedPrice=1.99</td>
     <td>newPastry.Price=1.99</td>
     <td>True</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Should correctly return cost of Bread</td>
+    <td>int amount=3;<br>
+        double price = 4.49;<br>
+        Bread newBread = new Bread(price);<br>
+    </td>
+    <td>newBread.CalculateBreadCost=14.97</td>
+    <td>False</td>
   </tr>
 </table>
 

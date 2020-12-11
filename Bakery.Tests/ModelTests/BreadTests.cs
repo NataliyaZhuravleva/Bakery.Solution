@@ -37,5 +37,16 @@ namespace Bakery.Tests
 
       Assert.AreEqual(updatedPrice, result);
     }
+    [TestMethod]
+    public void CalculateBreadCost_ReturnBreadCost_Double()
+    {
+      double price = 4.49;
+      Bread newBread = new Bread(price);
+      int amount=3;
+      
+      double result = newBread.CalculateBreadCost(amount);
+
+      Assert.AreEqual(amount*price, result);
+    }
   }
 }
