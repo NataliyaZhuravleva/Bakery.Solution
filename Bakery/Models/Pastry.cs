@@ -11,7 +11,7 @@ namespace Bakery.Models
     }
     public double CalculatePastryCost(int amount)
     {
-      return amount*PastryPrice;
+      return amount*PastryPrice+1;
     }
   }
 }
