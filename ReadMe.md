@@ -106,6 +106,14 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
     <td>typeof(Bread) = newBread.GetType()</td>
     <td>True</td>
   </tr>
+  <tr>
+    <td>2</td>
+    <td>Should correctly return price</td>
+    <td>double price = 2.99;<br>
+      Bread newBread = new Bread(price);</td>
+    <td>newBread.Price=2.99</td>
+    <td>False</td>
+  </tr>
   
 </table>
 
