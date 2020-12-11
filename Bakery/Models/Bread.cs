@@ -2,16 +2,16 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public double Price { get; set; }
+    public double BreadPrice { get; set; }
 
-    public Bread(double price)
+    public Bread(double breadPrice)
     {
-      Price = price;
+      BreadPrice = breadPrice;
     }
 
     public double CalculateBreadCost(int amount)
     {
-      return amount*Price;
+      return amount*BreadPrice;
     }
   }
 }

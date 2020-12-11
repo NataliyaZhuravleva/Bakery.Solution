@@ -21,7 +21,7 @@ namespace Bakery.Tests
       double price = 2.99;
       Pastry newPastry = new Pastry(price);
 
-      double result = newPastry.Price;
+      double result = newPastry.PastryPrice;
 
       Assert.AreEqual(price, result);
     }
@@ -32,10 +32,22 @@ namespace Bakery.Tests
       Pastry newPastry = new Pastry(price);
 
       double updatedPrice = 1.99;
-      newPastry.Price=updatedPrice;
-      double result = newPastry.Price;
+      newPastry.PastryPrice = updatedPrice;
+      double result = newPastry.PastryPrice;
 
       Assert.AreEqual(updatedPrice, result);
+    }
+
+    [TestMethod]
+    public void CalculatePastryCost_ReturnPastryCost_Double()
+    {
+      double price = 2.99;
+      Pastry newPastry = new Pastry(price);
+      int amount = 3;
+
+      double result = newPastry.CalculatePastryCost(amount);
+
+      Assert.AreEqual(amount * price, result);
     }
   }
 }

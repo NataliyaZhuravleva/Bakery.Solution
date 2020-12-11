@@ -2,12 +2,16 @@ namespace Bakery.Models
 {
   public class Pastry
   {
-    public double Price { get; set;}
+    public double PastryPrice { get; set;}
 
 
-    public Pastry(double price)
+    public Pastry(double pastryPrice)
     {
-      Price= price;
+      PastryPrice= pastryPrice;
+    }
+    public double CalculatePastryCost(int amount)
+    {
+      return amount*PastryPrice;
     }
   }
 }

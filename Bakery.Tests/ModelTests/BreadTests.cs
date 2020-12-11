@@ -21,7 +21,7 @@ namespace Bakery.Tests
       double price = 4.49;
       Bread newBread = new Bread(price);
 
-      double result = newBread.Price;
+      double result = newBread.BreadPrice;
 
       Assert.AreEqual(price, result);
     }
@@ -32,8 +32,8 @@ namespace Bakery.Tests
       Bread newBread = new Bread(price);
       
       double updatedPrice = 3.49;
-      newBread.Price = updatedPrice;
-      double result = newBread.Price;
+      newBread.BreadPrice = updatedPrice;
+      double result = newBread.BreadPrice;
 
       Assert.AreEqual(updatedPrice, result);
     }
