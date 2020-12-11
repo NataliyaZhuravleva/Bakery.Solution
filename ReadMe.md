@@ -123,6 +123,13 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
     <td>newBread.Price=1.99</td>
     <td>True</td>
   </tr>
+  <tr>
+    <td>4</td>
+    <td>Should create Pastry objects of the Pastry type</td>
+    <td>Pastry newPastry = new Pastry();</td>
+    <td>typeof(Pastry) = newPastry.GetType()</td>
+    <td>True</td>
+  </tr>
   
 </table>
 
