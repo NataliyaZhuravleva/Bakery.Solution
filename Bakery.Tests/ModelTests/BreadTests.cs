@@ -48,5 +48,13 @@ namespace Bakery.Tests
 
       Assert.AreEqual(amount*price, result);
     }
+
+    [TestMethod]
+    public void BreadConstructor_CreatesInstanceOfBreadWithDealMarker_Bread()
+    {
+      double price = 4.49;
+      Bread newBread = new Bread(price, 1);
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
   }
 }

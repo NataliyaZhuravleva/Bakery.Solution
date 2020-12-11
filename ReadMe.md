@@ -167,6 +167,14 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
     <td>newPastry.CalculatePastryCost=8.97</td>
     <td>True</td>
   </tr>
+  <tr>
+    <td>9</td>
+    <td>Should create Bread objects of the Bread type with _breadDealMarker property</td>
+    <td>double price = 4.49;<br>
+        Bread newBread = new Bread(price, 1);</td>
+    <td>typeof(Bread) = newBread.GetType()</td>
+    <td>False</td>
+  </tr>
 </table>
 
 ### <span style="color:#0ec2b8">License</span> 
