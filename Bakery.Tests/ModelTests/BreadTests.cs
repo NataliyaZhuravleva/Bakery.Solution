@@ -53,7 +53,7 @@ namespace Bakery.Tests
     public void BreadConstructor_CreatesInstanceOfBreadWithDealMarker_Bread()
     {
       double price = 4.49;
-      Bread newBread = new Bread(price, 1);
+      Bread newBread = new Bread(price, true);
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
   }
