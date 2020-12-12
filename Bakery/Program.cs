@@ -25,7 +25,7 @@ public class Program
       }
       if (newPastry.PastryDealMarker == true)
       {
-        Console.WriteLine("Buy 1 Pastry for $" + pastryPrice+" or 3 for $"+ newPastry.CalculatePastryCost(3));
+        Console.WriteLine("Buy 1 Pastry for $" + pastryPrice + " or 3 for $" + newPastry.CalculatePastryCost(3));
       }
     }
 
@@ -34,22 +34,45 @@ public class Program
     string ifBuyer = Console.ReadLine();
     if (ifBuyer.ToLower() == "y")
     {
-      Console.WriteLine("How many loafs of bread would you like to buy today? (answer must be more or equal zero)");
-      int breadAmount = int.Parse(Console.ReadLine());
-
-      Console.WriteLine("How many pastries would you like to buy? (answer must be more or equal zero)");
-      int pastryAmount = int.Parse(Console.ReadLine());
-      
-      if (breadAmount >= 0 && pastryAmount >= 0)
+      int breadAmount = InputtedBreadAmount();
+      if (breadAmount >= 0)
       {
-        double result = CalculateTotalCost(breadAmount, pastryAmount, newBread, newPastry);
-        Console.WriteLine("Total cost of your order: $" +result);
+        int pastryAmount = InputtedPastryAmount();
+        if (pastryAmount >= 0)
+        {
+          double result = CalculateTotalCost(breadAmount, pastryAmount, newBread, newPastry);
+          Console.WriteLine("Total cost of your order: $" + result);
+        }
       }
     }
-  }
+    else
+    {
+      Console.WriteLine("Are you finished for today? ['Y' for yes, 'Enter' for no]");
+      string finishedAnswer = Console.ReadLine();
+      if (finishedAnswer.ToLower() == "y")
+      {
+        Console.WriteLine("Goodbye.");
+      }
+      else
+      {
+        Main();
+      }
+    }
+  } 
+    static int InputtedBreadAmount()
+    {
+      Console.WriteLine("How many loafs of bread would you like to buy today? (answer must be more or equal zero)");
+      return int.Parse(Console.ReadLine());
+    }
 
-  static double CalculateTotalCost(int breadAmount, int pastryAmount, Bread newBread, Pastry newPastry)
-  {
-    return newBread.CalculateBreadCost(breadAmount) + newPastry.CalculatePastryCost(pastryAmount);
+    static int InputtedPastryAmount()
+    {
+      Console.WriteLine("How many pastries would you like to buy? (answer must be more or equal zero)");
+      return int.Parse(Console.ReadLine());
+    }
+
+    static double CalculateTotalCost(int breadAmount, int pastryAmount, Bread newBread, Pastry newPastry)
+    {
+      return newBread.CalculateBreadCost(breadAmount) + newPastry.CalculatePastryCost(pastryAmount);
+    }
   }
-}
