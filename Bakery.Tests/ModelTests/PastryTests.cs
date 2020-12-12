@@ -1,7 +1,5 @@
-using System;
-using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bakery.Models;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Bakery.Tests
 {
@@ -25,6 +23,7 @@ namespace Bakery.Tests
 
       Assert.AreEqual(price, result);
     }
+
     [TestMethod]
     public void SetPastryPrice_SetPastryPrice_Double()
     {
@@ -67,7 +66,7 @@ namespace Bakery.Tests
 
       double result = newPastry.CalculatePastryCost(amount);
 
-      Assert.AreEqual((amount/3)*(price-1)+(amount-amount/3)*price, result);
+      Assert.AreEqual((amount / 3) * (price - 1) + (amount - amount / 3) * price, result);
     }
   }
 }

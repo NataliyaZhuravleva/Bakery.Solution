@@ -4,10 +4,12 @@ namespace Bakery.Models
   {
     public double BreadPrice { get; set; }
     public bool BreadDealMarker { get; }
+    
     public Bread(double breadPrice)
     {
       BreadPrice = breadPrice;
     }
+    
     public Bread(double breadPrice, bool breadDealMarker)
       : this(breadPrice)
     {
@@ -25,7 +27,5 @@ namespace Bakery.Models
         return (amount - amount / 3) * BreadPrice;
       }
     }
-
-
   }
 }

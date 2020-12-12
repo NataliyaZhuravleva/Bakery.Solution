@@ -1,7 +1,5 @@
-using System;
-using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bakery.Models;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Bakery.Tests
 {
@@ -25,6 +23,7 @@ namespace Bakery.Tests
 
       Assert.AreEqual(price, result);
     }
+
     [TestMethod]
     public void SetBreadPrice_SetBreadPrice_Double()
     {
@@ -37,6 +36,7 @@ namespace Bakery.Tests
 
       Assert.AreEqual(updatedPrice, result);
     }
+
     [TestMethod]
     public void CalculateBreadCost_ReturnBreadCost_Double()
     {

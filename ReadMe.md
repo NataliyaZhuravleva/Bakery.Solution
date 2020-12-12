@@ -7,60 +7,48 @@
 ## <span style="color:#0ec2b8">Description</span>
 
 _This is a console application for bakery that includes the following functionality:_
-
 * _User receive a prompt with a welcome message along with the cost for both Bread and Pastry._
-
 * _User may specify how many loaves of Bread and how many Pastrys they'd like. The application will return the total cost of the order._
-
 * _Pierre offers the following deals:_
     1. _Bread: Buy 2, get 1 free. A single loaf costs $5._
     2. _Pastry: Buy 1 for \$2 or 3 for $5._
 
 ## <span style="color:#0ec2b8">Setup/Installation Requirements</span>
 ### <span style="color:#c4f4ef">Open Online</span>
-TODO
+_This opportunity will be added later._
 ### <span style="color:#c4f4ef">Open Locally</span>
 1. _Navigate to my [Pierre's Bakery repo](https://github.com/NataliyaZhuravleva/Bakery) at https://github.com/NataliyaZhuravleva/Bakery_ to view the project files and commits.
 2. _Click on the green button labeled "Code"_ to copy repository URL.
 3. _Clone the repository to your local machine_ by opening your machine terminal and using the command "git clone https://github.com/NataliyaZhuravleva/Bakery".
 4. _Navigate to the folder "/Bakery.Tests"/ModelTests/ to see test files._
-5. _Navigate to the folder "/Bakery/Models/" to see C# files_
-6. _To use this application you will need to install .NET. Please, see instructions below._
+5. _Navigate to the folder "/Bakery/Models/" to see classes._
+6. _You may find the Main program here: "Bakery/Program.cs"._
+7. _To use this application you will need to install .NET. Please, see instructions below._
 
 ### <span style="color:#0ec2b8">.NET Installation</span> 
 
 
 #### <span style="color:#c4f4ef">Mac</span> 
-<p>C# and .NET programming are fully supported on Mac operating systems. We can install .NET and C# on a Mac in a few steps:</p>
 
 1. _Download this [.NET Core SDK (Software Development Kit)](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.2.106-macos-x64-installer) . Clicking this link will prompt a .pkg file download from Microsoft._
-
 2. _Open the file. This will launch an installer which will walk you through installation steps. Use the default settings the installer suggests._ 
-
 3. _Confirm the installation is successful by opening your terminal and running the command "$ dotnet --version". You should see something like this in response: 2.2.105. This means both .NET and C# are successfully installed._
 
 #### <span style="color:#c4f4ef">Windows</span> 
 Note on Windows Versions
 These Windows instructions assume you're using Windows 10. If you currently run Windows 7 or Windows 8, you may have a free upgrade available.
-
 If you are not running Windows 10 (and cannot or do not plan to upgrade), specific installation steps may differ. 
-
 #### Installation Steps:
 1. _Download either the the 64-bit .NET Core SDK (Software Development Kit). Clicking these links will prompt a .exe file download from Microsoft._
-
 2. _Open the file and follow the steps provided by the installer for your OS._
-
 3. _Confirm the installation is successful by opening a new Windows PowerShell window and running the command "dotnet --version". You should see something a response like this (version numbers do not need to be the same): 2.2.105_<br>
-_This means .NET and C# are installed and our computer recognizes the dotnet command._
+_This means .NET and C# are installed and your computer recognizes the dotnet command._
 
 ### <span style="color:#0ec2b8">Running Program</span> 
 #### <span style="color:#c4f4ef">Run Application</span>
-<p>You can launch our program with the following steps:</p>
 
 1. _Navigate to the "/Bakery/" folder in the command line._
-
 2. _Run the following command: $ dotnet build_
-
 3. _Run the following command to execute this compiled code: $ dotnet run_
 
 
@@ -136,7 +124,7 @@ _If you have any questions, ideas or concerns, please, contact me at [natalindri
     <td>double price = 2.99;<br>
         Pastry newPastry = new Pastry(price);</td>
     <td>newPastry.PastryPrice=2.99</td>
-    <td>True/td>
+    <td>True</td>
   </tr>
   <tr>
     <td>6</td>

@@ -1,7 +1,5 @@
 using Bakery.Models;
 using System;
-using System.Collections.Generic;
-
 
 public class Program
 {
@@ -27,7 +25,7 @@ public class Program
       }
       if (newPastry.PastryDealMarker == true)
       {
-        Console.WriteLine("Buy 2 loafs of bread, get 1 loaf free.");
+        Console.WriteLine("Buy 1 Pastry for $" + pastryPrice+" or 3 for $"+ newPastry.CalculatePastryCost(3));
       }
     }
 
@@ -38,21 +36,20 @@ public class Program
     {
       Console.WriteLine("How many loafs of bread would you like to buy today? (answer must be more or equal zero)");
       int breadAmount = int.Parse(Console.ReadLine());
-      //Console.WriteLine(breadAmount);
 
       Console.WriteLine("How many pastries would you like to buy? (answer must be more or equal zero)");
       int pastryAmount = int.Parse(Console.ReadLine());
-      //Console.WriteLine(pastryAmount);
+      
       if (breadAmount >= 0 && pastryAmount >= 0)
       {
         double result = CalculateTotalCost(breadAmount, pastryAmount, newBread, newPastry);
-        Console.WriteLine("It will cost you $" +result);
+        Console.WriteLine("Total cost of your order: $" +result);
       }
     }
   }
+
   static double CalculateTotalCost(int breadAmount, int pastryAmount, Bread newBread, Pastry newPastry)
   {
     return newBread.CalculateBreadCost(breadAmount) + newPastry.CalculatePastryCost(pastryAmount);
   }
-
 }
